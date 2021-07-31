@@ -4,7 +4,7 @@
 ```
 mkdir django-member-register
 cd django-member-register
-D:\source\Python\Django_samples\django-member-register>python -m venv myvenv
+D:\django-member-register>python -m venv myvenv
 ```
 
 
