@@ -85,11 +85,9 @@ class UserCreateComplete(generic.TemplateView):
         # 期限切れ
         except SignatureExpired:
             return HttpResponseBadRequest()
-
         # tokenが間違っている
         except BadSignature:
             return HttpResponseBadRequest()
-
         # tokenは問題なし
         else:
             try:
@@ -212,11 +210,9 @@ class EmailChangeComplete(LoginRequiredMixin, generic.TemplateView):
         # 期限切れ
         except SignatureExpired:
             return HttpResponseBadRequest()
-
         # tokenが間違っている
         except BadSignature:
             return HttpResponseBadRequest()
-
         # tokenは問題なし
         else:
             User.objects.filter(email=new_email, is_active=False).delete()
