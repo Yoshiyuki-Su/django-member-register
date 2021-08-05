@@ -6,4 +6,7 @@
 本登録用URL
 {{ protocol}}://{{ domain }}{% url 'accounts:user_create_complete' token %}
 
+本メールは{{protocol}}://{{domain}}より自動送信されています。
+心当たりのない場合は破棄をお願いします。
+
 Django サイト

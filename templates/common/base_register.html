@@ -29,6 +29,9 @@
           <a class="nav-item nav-link" href="{% url 'accounts:user_update' user.pk %}">ユーザー情報更新</a>
         </li>
         <li>
+          <a class="nav-item nav-link" href="{% url 'accounts:password_change' %}">パスワードの変更</a>
+        </li>
+        <li>
           <a class="nav-item nav-link" href="{% url 'accounts:logout' %}">ログアウト</a>
         </li>
         {% else %}
